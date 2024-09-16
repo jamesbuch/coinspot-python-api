@@ -29,5 +29,8 @@ jobs:
         pip install -r requirements.txt
 
     - name: Run tests
+      env:
+        COINSPOT_API_KEY: ${{ secrets.COINSPOT_API_KEY }}
+        COINSPOT_API_SECRET: ${{ secrets.COINSPOT_API_SECRET }}
       run: |
         pytest

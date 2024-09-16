@@ -1,11 +1,11 @@
 import pytest
 import os
 from dotenv import load_dotenv
-from datetime import datetime, timedelta
-from coinspot import (
-    create_coinspot_api, Coinspot, CoinspotPublicApi, LatestPricesResponse, LatestCoinPricesResponse,
-    LatestBuySellPriceResponse, ApiStatusResponse, MyCoinBalanceResponse,
-    MyCoinBalancesResponse, BuySellQuoteResponse, CoinspotApiError
+# from datetime import datetime, timedelta
+from coinspot.coinspot import create_coinspot_api, Coinspot, CoinspotPublicApi, CoinspotApiError
+from coinspot.coinspot_types import (
+    LatestPricesResponse, LatestCoinPricesResponse, LatestBuySellPriceResponse,
+    ApiStatusResponse, MyCoinBalanceResponse, MyCoinBalancesResponse, BuySellQuoteResponse
 )
 
 # Load environment variables from .env file

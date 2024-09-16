@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "coinspot-api"
+version = "0.1.0"
+authors = [
+  { name="James Buchanan", email="jamesbuch1337@gmail.com" },
+]
+description = "A Python wrapper for the Coinspot V2 API"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/jamesbuch/coinspot-api"
+"Bug Tracker" = "https://github.com/jamesbuch1337/coinspot-api/issues"
